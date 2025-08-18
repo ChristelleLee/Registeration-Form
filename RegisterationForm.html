@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="Registeration-Form.css" >
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="Registeration-Form.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Debug Lab Registration Form</h1>
+        <p>Welcome to Debug Lab Centre!</p>
+        <form id="registrationForm">
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <label for="name">Student's Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter student's full name" required>
+                <label for="age">Student's Age</label> <select id="dropdown" name="age" required>
+                    <option value="">Select your age</option>
+                    <option value="1">7</option>
+                    <option value="2">8</option>
+                    <option value="3">9</option>
+                    <option value="4">10</option>
+                    <option value="5">11</option>
+                    <option value="6">12</option>
+                    <option value="7">13</option>
+                    <option value="8">14</option>
+                    <option value="9">15</option>
+                    <option value="10">16</option>
+                    <option value="11">17</option>
+                </select>
+                <label for="gender">Student's Gender</label>
+                <input type="radio" id="gender" name="gender" value="Male">Male
+                <input type="radio" id="gender" name="gender" value="Female">Female
+                <p>Contact Information</p>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter student's email address">
+
+                <label for="phone">Phone Number</label> 
+                <input type="tel" id="phone" name="phone" placeholder="Enter student's phone number">
+            </div>
+            <div class="guardian-info">
+                <h2>Guardian Information</h2>
+                <label for="guardianName">Parent / Guardian Full Name</label>
+                <input type="text" id="guardianName" name="guardianName" placeholder="Enter guardian's full name" required>
+                
+                <label for="relationship">Relationship to Student</label> <input type="dropbox" id="relationship" name="relationship" required>
+                <select id="relationship" name="relationship" required>
+                    <option value="">Select relationship to student</option>
+                    <option value="1">Father</option>
+                    <option value="2">Mother</option>
+                    <option value="3">Guardian</option>
+                    <option value="4">Grandparent</option>
+                    <option value="5">Relative</option>
+                </select>
+
+                    <p>Contact Information</p>
+                    <label for="guardianEmail">Guardian's Email Address:</label>
+                    <input type="email" id="guardianEmail" name="guardianEmail" placeholder="Enter guardian's email address" required>
+                    
+                    <label for="guardianPhone">Guardian's Phone Number</label>
+                    <input type="tel" id="guardianPhone" name="guardianPhone" placeholder="Enter guardian's phone number" required>
+                </div> 
+                <div class="course-selection">
+                    <h2>Course Selection</h2>
+                    <p>Courses the student wishes to enroll in</p>
+                    <label for="courses">Select Courses</label>
+                    <select type="checkbox" id="courses" name="courses" required>
+                        <option value="coding">Coding</option>
+                        <option value="3dDesign">3D Design</option>
+                        <option value="gameAnimation">Game Animation</option>
+                        <option value="webDevelopment">Web Development</option>
+                        <option value="robotics">Robotics</option>
+                    </select>
+                </div>
+                <div class="learning-mode">
+                    <h2>Preferred Learning Mode</h2>
+                    <label for="learningMode">Select Learning Mode</label>
+                    <input type="radio" id="learningMode" name="learningMode" value="learningMode">Online
+                </input><br>
+                <input type="radio" id="learningMode" name="learningMode" value="learningMode">In-Person
+            </input><br> </div> <div class="schedule">
+                
+                <h2>Preferred Schedule</h2>
+                <label for="days">Days</label>
+                <select type="checkbox" id="days" name="days" required>
+                    <option value="Weekends">Weekends</option>
+                    <option value="Weekdays">Weekdays</option>
+                </select>
+                
+                <label for="times">Times</label> 
+                <select type="checkbox" id="times" name="times" required>
+                    <option value="Morning">Weekends</option>
+                    <option value="Afternoon">Weekdays</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </div>
+            <div class="additional-info">
+                <h2>Additional Information</h2>
+                <label for="comments">Comments or Requests (optional)</label>
+                <textarea id="text" name="comments"  placeholder="Enter any additional information"></textarea>
+            </div>
+            
+            <button type="submit">Submit Registration</button>
+        </form>
+    </body>
+</html>
