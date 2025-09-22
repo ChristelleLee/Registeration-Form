@@ -35,23 +35,39 @@ body {
     margin: 2% 0 2% 0;
     background-color: #FFFFAA !important;
     border: 2px solid #FFA500;
+    color: #808080;
 }
 
-#name, #email, #phone, #guardianName, #guardianEmail, #guardianPhone, #text {  
-    width: 100%;
-}
-
-#age, #relationship {
+.dropbox {
     width: auto;
     color: #808080;
 }
-#text {
+
+
+textarea {
     height: 50px;
 }
 
 
 ::placeholder {
   color: #808080;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+}
+
+.radio {
+    margin: 2% 0 2% 0;
+}
+    
+textarea {
+    height: 50px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #FFFFAA inset !important; 
+  -webkit-text-fill-color: #808080 !important;
 }
 
 button {

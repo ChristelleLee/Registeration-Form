@@ -16,11 +16,11 @@
             <form id="registrationForm">
                 <div class="personal-info">
                     <h2>Personal Information</h2>
-                    <label for="name">Student's Full Name</label><br>
+                    <label for="name" class="question">Student's Full Name</label><br>
                     <input type="text" id="name" name="name" placeholder="Enter student's full name" required><br>
 
-                    <label for="age">Student's Age</label><br>
-                    <select id="age" name="age" required>
+                    <label for="age" class="question">Student's Age</label><br>
+                    <select id="age" class="dropbox" name="age" required>
                         <option value="">Select your age</option>
                         <option value="1">7</option>
                         <option value="2">8</option>
@@ -35,12 +35,12 @@
                         <option value="11">17</option>
                     </select><br>
 
-                    <label for="gender">Student's Gender</label><br>
+                    <label for="gender" class=" radio">Student's Gender</label><br>
                     <input type="radio" id="gender" name="gender" value="Male" required>Male</input><br>
                     <input type="radio" id="gender" name="gender" value="Female" required>Female</input>
 
                     <h3>Contact Information</h3>
-                    <label for="email">Email Address</label><br>
+                    <label for="email" >Email Address</label><br>
                     <input type="email" id="email" name="email" placeholder="Enter student's email address" required><br>
 
                     <label for="phone">Phone Number</label><br>
@@ -53,7 +53,7 @@
                     <input type="text" id="guardianName" name="guardianName" placeholder="Enter guardian's full name" required><br>
                     
                     <label for="relationship">Relationship to Student</label><br>
-                    <select id="relationship" name="relationship" required>
+                    <select id="relationship" class="dropbox" name="relationship" required>
                         <option value="">Select relationship to student</option>
                         <option value="1">Father</option>
                         <option value="2">Mother</option>
@@ -74,7 +74,7 @@
 
                 <div class="course-selection">
                     <h2>Course Selection</h2>
-                    <p>Select courses the student wishes to enroll in</p>
+                    <p class="question">Select courses the student wishes to enroll in</p>
                     
                     <input type="checkbox" id="courses" name="courses" value="Coding">
                     <label for="Coding">Coding</label><br>
@@ -96,7 +96,7 @@
 
                 <div class="learning-mode">
                     <h2>Preferred Learning Mode</h2>
-                    <label for="learningMode">Select Learning Mode</label><br>
+                    <label for="learningMode" class="question radio">Select Learning Mode</label><br>
                     <input type="radio" id="learningMode" name="learningMode" value="learningMode">Online</input><br>
                     <input type="radio" id="learningMode" name="learningMode" value="learningMode">In-Person</input><br>
                 </div>
@@ -104,7 +104,7 @@
                 
                 <div class="schedule">
                     <h2>Preferred Schedule</h2>
-                    <p>Select prefferred days</p>
+                    <p class="question">Select prefferred days</p>
                     <input type="checkbox" id="days" name="days" value="Weekends">
                     <label for="Weekends">Weekends</label><br>
 
@@ -112,7 +112,7 @@
                     <input type="checkbox" id="days" name="days" value="Weekdays">
                     <label for="Weekdays">Weekdays</label><br>
                     
-                    <p>Select prefferred times</p>
+                    <p  class="question">Select prefferred times</p>
                     <input type="checkbox" id="times" name="times" value="Morning">
                     <label for="Morning">Morning</label><br>
 
@@ -126,7 +126,7 @@
 
                 <div class="additional-info">
                     <h2>Additional Information</h2>
-                    <label for="comments">Comments or Requests (optional)</label><br>
+                    <label for="comments" class="question">Comments or Requests (optional)</label><br>
                     <textarea id="text" name="comments"  placeholder="Enter any additional information"></textarea>
                 </div>
                 
